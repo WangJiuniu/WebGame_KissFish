@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-width, initial-scale=1">
+    <title>Fish Mom</title>
+    <style>
+        body{
+            padding-top:20px;
+        }
+        ul{
+            padding:0;
+            margin:0;
+        }
+        li{
+
+            list-style: none;
+        }
+        .all_bg{
+            width:800px;
+            height:600px;
+            margin:0 auto;
+        }
+        #all_canvas{
+            position: relative;
+            width:800px;
+            height: 600px;
+            margin:0;
+        }
+        #canvas1{
+            position: absolute;
+            top:0;
+            left:0;
+            z-index:1;
+        }
+        #canvas2{
+            position: absolute;
+            top:0;
+            left:0;
+            z-index:0;
+        }
+
+        #btn{
+            margin-top:20px;
+            text-align: center;
+
+        }
+        #start{
+            color: orange;
+            border:1px solid #1685a9;
+            border-radius: 5px;
+            box-shadow:0 0 10px cornflowerblue;
+            padding:5px 10px;
+            text-decoration: none;
+        }
+        #start:hover{
+            background: #0065CC;
+            opacity: 0.5;
+            transition: all 0.5s;
+        }
+
+        #aside{
+            width: 200px;
+            position: fixed;
+            left:20px;
+            top:100px;
+            border:1px solid cornflowerblue;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        #aside li{
+            padding-top:10px;
+            line-height: 20px;
+            color: #0065CC;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="all_bg">
+    <div id="all_canvas">
+        <canvas id="canvas1" width="800" height="600"></canvas>
+        <canvas id="canvas2" width="800" height="600"></canvas>
+    </div>
+
+    <div id="aside">
+        <h3>KissFish游戏规则</h3>
+        <ul>
+            <li>1. 用鼠标控制大鱼方向</li>
+            <li>2. 大鱼吃到果实后要及时喂给小鱼,
+                不然小鱼变白就Game Over了.</li>
+            <li>3. 黄色果实计分100,蓝色果实计分200.</li>
+            <li>4. 点击屏幕下方的START开始游戏.</li>
+        </ul>
+    </div>
+    <div id="btn">
+        <a id="start" href="javascrip:;" >START</a>
+    </div>
+    <!--<img src="src/background.jpg" alt="">-->
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/commonFunctions.js"></script>
+<script type="text/javascript" src="js/background.js"></script>
+<script type="text/javascript" src="js/ane.js"></script>
+<script type="text/javascript" src="js/fruit.js"></script>
+<script type="text/javascript" src="js/mom.js"></script>
+<script type="text/javascript" src="js/collsion.js"></script>
+<script type="text/javascript" src="js/baby.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/wave.js"></script>
+<script type="text/javascript" src="js/halo.js"></script>
+<script type="text/javascript" src="js/dust.js"></script>
+</body>
+</html>
